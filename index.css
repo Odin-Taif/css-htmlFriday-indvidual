@@ -1,7 +1,8 @@
-::root {
+:root {
   --blue: #1e90ff;
   --white: #ffffff;
   --bg: lightblue;
+  --primary: #118989;
 }
 * {
   box-sizing: border-box;
@@ -11,4 +12,32 @@
 
 body {
   background-color: var(--bg);
+}
+nav {
+  padding: 1rem;
+  width: 100%;
+  background-color: var(--primary);
+}
+.nav-bar {
+  font-size: 1.4rem;
+  display: flex;
+  list-style-type: none;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar li {
+  margin: 1rem;
+}
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 600px) {
+  /* body {
+    background-color: olive;
+  } */
+
+  .nav-bar {
+    font-size: 1.5rem;
+  }
 }
